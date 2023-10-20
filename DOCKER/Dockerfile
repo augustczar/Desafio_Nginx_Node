@@ -1,7 +1,0 @@
-FROM alpine:3.18
-
-ENV NODE_VERSION 20.8.1
-
-WORKDIR /usr/src/app
-
-EXPOSE 3000
