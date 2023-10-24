@@ -9,8 +9,7 @@ services:
     networks:
       - node-network
     entrypoint: wait-for tcp://db:3306 -t 20 -- ./start.sh
-    #entrypoint: wait-for tcp://db:3306 -timeout 20s docker-entrypoint.sh
-    # entrypoint: wait-for db:3306 -t 20s docker-entrypoint.sh
+    
     volumes:
       - ./node:/usr/src/app
     tty: true
